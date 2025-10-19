@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eric Mwendwa - Personal Website</title>
+  <style>
+    /* ====== GLOBAL STYLES ====== */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fb;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    h1, h2 {
+      color: #0d47a1;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* ====== HEADER ====== */
+    header {
+      background: linear-gradient(90deg, #1565c0, #42a5f5);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    header p {
+      margin-top: 0.8rem;
+      font-size: 1.2rem;
+    }
+
+    /* ====== NAVIGATION ====== */
+    nav {
+      background: #0d47a1;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    /* ====== SECTIONS ====== */
+    section {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      color: #1565c0;
+    }
+
+    /* ====== ABOUT ====== */
+    #about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    #about img {
+      width: 250px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    #about p {
+      flex: 1;
+      font-size: 1.1rem;
+    }
+
+    /* ====== CARD STYLE SECTIONS ====== */
+    .card {
+      background: #f9fbff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    }
+
+    /* ====== GALLERY ====== */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* ====== CONTACT ====== */
+    #contact p {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    #contact a {
+      color: #1565c0;
+      font-weight: bold;
+    }
+
+    #contact a:hover {
+      color: #ff5722;
+    }
+
+    /* ====== FOOTER ====== */
+    footer {
+      background: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      #about {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      #about img {
+        width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Eric Mwendwa</h1>
+    <p>Web Developer | Designer | Environmental Scientist | Certified W3 Student | Certified Swimmer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#sports">Sports</a>
+    <a href="#album">My Album</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <img src="c:\Users\Admin\Pictures/profile.jpg" alt="Eric Mwendwa">
+    <p>Hello! I’m <strong>Eric Mwendwa</strong>, a passionate developer and aspiring <strong>Environmental Scientist</strong> currently pursuing my degree at <strong>Egerton University</strong>.  
+    I’m a <strong>Certified W3 Student</strong> with experience in <strong>HTML, CSS, JavaScript, and Python</strong>.  
+    I love creating clean, responsive websites and building technology that positively impacts the world.  
+    Welcome to my personal corner on the web!</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Egerton University</strong> – Environmental Science</li>
+        <li><strong>Makindu Boys’ High School</strong> – Secondary Education</li>
+        <li><strong>Kiambani Primary School</strong> – Primary Education</li>
+      </ul>
+    </div>
+    <div class="gallery">
+      <img src="c:\Users\Admin\Pictures/eger.jpeg" alt="Egerton University">
+      <img src="c:\Users\Admin\Pictures/e1.jpg" alt="Swimming Event">
+      <img src="c:\Users\Admin\Pictures/e2.jpg" alt="Swimming Event">
+    </div>
+  </section>
+
+  <section id="sports">
+    <h2>Sports & Achievements</h2>
+    <div class="card">
+      <p>I am an athlete and a certified swimmer who believes in discipline, teamwork, and resilience.  
+      Represented my school in regional competitions and earned recognition for swimming excellence.</p>
+    </div>
+    <div class="gallery">
+      <img src="c:\Users\Admin\Pictures/a.jpg" alt="Swimming Event">
+      <img src="c:\Users\Admin\Pictures/b.jpg" alt="Swimming Event">
+      <img src="c:\Users\Admin\Pictures/c.jpg" alt="Swimming Event">
+      <img src="c:\Users\Admin\Pictures/d.jpg" alt="Swimming Event">
+      <img src="c:\Users\Admin\Pictures/e.jpg" alt="Swimming Event">
+    </div>
+  </section>
+
+  <section id="album">
+    <h2>My Album</h2>
+    <div class="gallery">
+      <img src="c:\Users\Admin\Pictures/10.jpg" alt="My Photo">
+      <img src="c:\Users\Admin\Pictures/2.jpg" alt="Egerton University">
+      <img src="c:\Users\Admin\Pictures/3.jpg" alt="Swimming">
+      <img src="c:\Users\Admin\Pictures/4.jpg" alt="Placeholder">
+      <img src="c:\Users\Admin\Pictures/7.jpg" alt="Placeholder">
+      <img src="c:\Users\Admin\Pictures/6.jpg" alt="Placeholder">
+      <img src="c:\Users\Admin\Pictures/5.jpg" alt="Placeholder">
+      <img src="c:\Users\Admin\Pictures/11.jpg" alt="Placeholder">
+      <img src="c:\Users\Admin\Pictures/9.jpg" alt="Placeholder">
+      <img src="c:\Users\Admin\Pictures/8.jpg" alt="Placeholder">
+      <img src="c:\Users\Admin\Pictures/1.jpg" alt="Placeholder">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ericmwendwa5948@gmail.com">ericmwendwa5948@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/its._.eric_" target="_blank">@its._.eric_</a></p>
+    <p>Facebook: <a href="https://facebook.com/itz.eric" target="_blank">IT'Z ERIC</a></p>
+    <p>WhatsApp: <a href="https://wa.me/254110870811" target="_blank">Chat on WhatsApp</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Eric Mwendwa. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
